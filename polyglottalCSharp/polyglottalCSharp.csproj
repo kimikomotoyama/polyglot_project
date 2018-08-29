@@ -10,5 +10,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\js\Vendor\" />
+    <Folder Include="Controllers\api\" />
   </ItemGroup>
 </Project>

@@ -18,7 +18,7 @@ namespace polyglottalCSharp.Controllers
         {
             ViewData["Message"] = "Hello " + name;
             ViewData["Gender"] = gender.ToLower();
-            ViewData["Compliments"] = new Compliment().GetCompliment(gender);
+            ViewData["Compliments"] = new Compliment().GetCompliment(gender.ToLower());
 
             return View();
         }
