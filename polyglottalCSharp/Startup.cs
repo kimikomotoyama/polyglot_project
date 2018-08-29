@@ -61,7 +61,7 @@ namespace polyglottalCSharp
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "default",
+                    name: "",
                     template: ""
                 );
             });
