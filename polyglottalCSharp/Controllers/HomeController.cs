@@ -12,6 +12,7 @@ namespace polyglottalCSharp.Controllers
     public class HomeController : Controller
     {
        
+        [Route("")]
         // Example GET query: http://localhost:xxxx/HelloWorld/Welcome?name=Rick&numtimes=4&gender=female
         public IActionResult Index(string name, string gender = "male")
         {
@@ -22,6 +23,7 @@ namespace polyglottalCSharp.Controllers
             return View();
         }
 
+        [Route("/About")]
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
@@ -29,6 +31,7 @@ namespace polyglottalCSharp.Controllers
             return View();
         }
 
+        [Route("/Contact")]
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
@@ -36,6 +39,7 @@ namespace polyglottalCSharp.Controllers
             return View();
         }
 
+        [Route("Privacy")]
         public IActionResult Privacy()
         {
             return View();
