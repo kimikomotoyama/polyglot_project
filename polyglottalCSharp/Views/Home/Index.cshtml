@@ -7,13 +7,14 @@
     <div class="col-md-3">
         <h2>Fish Compliments</h2>
         <div>
+            <img src="~/images/goodjob.gif"
+                 asp-append-version="true" />
             <ul>
                 <li>@ViewData["Message"], you are: @ViewData["Gender"]</li>
                 @foreach (string element in compliments) {
                     <li>@element</li>           
                 }
             </ul>
-            <button >GO!</button>
         </div>
     </div>
     <div class="col-md-3">

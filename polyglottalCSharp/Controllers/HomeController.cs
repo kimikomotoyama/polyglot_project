@@ -13,10 +13,9 @@ namespace polyglottalCSharp.Controllers
     {
        
         // Example GET query: http://localhost:xxxx/HelloWorld/Welcome?name=Rick&numtimes=4&gender=female
-        public IActionResult Index(string name, int numTimes = 1, string gender = "male")
+        public IActionResult Index(string name, string gender = "male")
         {
             ViewData["Message"] = "Hello " + name;
-            ViewData["NumTimes"] = numTimes;
             ViewData["Gender"] = gender.ToLower();
             ViewData["Compliments"] = new Compliment().GetCompliment(gender);
 
