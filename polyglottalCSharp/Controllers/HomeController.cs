@@ -11,7 +11,7 @@ namespace polyglottalCSharp.Controllers
 {
     public class HomeController : Controller
     {
-       
+
         [Route("")]
         // Example GET query: http://localhost:xxxx/HelloWorld/Welcome?name=Rick&numtimes=4&gender=female
         public IActionResult Index(string name, string gender = "male")
@@ -51,24 +51,4 @@ namespace polyglottalCSharp.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
-
-    public class Compliment {
-        public List<string> GetCompliment(string gender) {
-
-            var list = new List<string>();
-            if (gender == "male") {
-                list = new List<string>() {
-                    "You are so handsome!",
-                    "You are so smart!"
-                };
-            } else {
-                list = new List<string>() {
-                    "You are so cute!",
-                    "You are so smart!"
-                };
-            }
-            return list;
-        }
-    }
-
 }
