@@ -39,7 +39,7 @@ Then, go into your compiler to run the code.
 
 ### Technology used
 
-* ASP.NET Core 2.1 (language: C#) ASP.NET Core is a lean and composable framework for building web and cloud applications. 
+* [ASP.NET Core 2.1](https://docs.microsoft.com/en-us/aspnet/index?view=aspnetcore-2.1#pivot=core) (language: C#) A lean and composable framework for building web and cloud applications. 
 * [Complimentr](https://complimentr.com/) API to give you random compliments.
 * [Animista](http://animista.net) Animista is a place where you can play with a collection of ready to use CSS animations, tweak them and download only those you will actually use.
 * [Newtonsoft](https://www.newtonsoft.com/json) Popular high-performance JSON framework for .NET
