@@ -11,6 +11,8 @@
 	App to give you the compliment you deserve
 </h3>
 
+<h5 align="center">This project was created as a project while I was a student at Code Chrysalis.</h5>
+
 <p align="center">
 	<img src="./polyglottalCSharp/wwwroot/images/complimentMe.png" width="550">
 </p>
