@@ -33,17 +33,25 @@
             <div class="col-md-3">
                 <img src="~/images/goodjob.gif"
                      asp-append-version="true" />
-                <ul>
-                    <li>@ViewData["Message"], you are: @ViewData["Gender"]</li>
-                    @foreach (string element in compliments)
-                    {
-                        <li>@element</li>
-                    }
-                </ul>
             </div>
             <div class="col-md-3">
-                <div class="speech-bubble kenburns-bottom">
-                    @compliment
+                <div class="each-bubble row">
+                    <div class="speech-bubble kenburns-bottom">
+                        @ViewData["Message"], you are: @ViewData["Gender"]
+                    </div>
+                </div>
+                @foreach (string element in compliments)
+                {
+                    <div class="each-bubble row">
+                        <div class="speech-bubble kenburns-bottom">
+                            @element
+                        </div>
+                    </div>
+                }
+                <div class="each-bubble row">
+                    <div class="speech-bubble kenburns-bottom">
+                        @compliment
+                    </div>
                 </div>
             </div>
         </div>
