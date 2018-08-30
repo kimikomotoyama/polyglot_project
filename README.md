@@ -1,9 +1,10 @@
 # 
 <h1 align="center">
-	<img
+	<div
 		width="300"
-		alt="ComplimentMe"
-		src="polyglottalCSharp/imgages/complimentMe.png">
+		alt="ComplimentMe">
+    ComplimentMe
+  </div>
 </h1>
 
 <h3 align="center">
