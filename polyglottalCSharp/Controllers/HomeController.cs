@@ -35,7 +35,7 @@ namespace polyglottalCSharp.Controllers
         [Route("/About")]
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Application description";
 
             return View();
         }
@@ -43,7 +43,7 @@ namespace polyglottalCSharp.Controllers
         [Route("/Contact")]
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Contact";
 
             return View();
         }
