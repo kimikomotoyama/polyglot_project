@@ -14,10 +14,7 @@ namespace polyglottalCSharp.Models
         public List<string> GetCompliment(string gender)
         {
 
-            //var complimentData = new Compliment();
-            //complimentData.getComplimentFromAPI();
-
-            var list = new List<string>();
+          var list = new List<string>();
             if (gender == "male")
             {
                 list = new List<string>() {

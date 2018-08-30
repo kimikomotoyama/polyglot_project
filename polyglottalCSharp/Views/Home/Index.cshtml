@@ -29,20 +29,23 @@
                 </div>
             </form>
         </div>
-        <div class="compliments">
-            <img src="~/images/goodjob.gif"
-                 asp-append-version="true" />
-            <ul>
-                <li>@ViewData["Message"], you are: @ViewData["Gender"]</li>
-                @foreach (string element in compliments)
-                {
-                    <li>@element</li>
-                }
-                    <li>
-                        @*@compliment.GetType().GetProperty("compliment").GetValue(compliment, null)*@
-                        @compliment
-                    </li>
-            </ul>
+        <div class="compliments row">
+            <div class="col-md-3">
+                <img src="~/images/goodjob.gif"
+                     asp-append-version="true" />
+                <ul>
+                    <li>@ViewData["Message"], you are: @ViewData["Gender"]</li>
+                    @foreach (string element in compliments)
+                    {
+                        <li>@element</li>
+                    }
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="speech-bubble kenburns-bottom">
+                    @compliment
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-md-3">
