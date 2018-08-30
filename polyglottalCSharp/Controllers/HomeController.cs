@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using polyglottalCSharp.Models;
 using System.Text.Encodings.Web;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace polyglottalCSharp.Controllers
 {
@@ -14,11 +16,18 @@ namespace polyglottalCSharp.Controllers
 
         [Route("")]
         // Example GET query: http://localhost:xxxx/HelloWorld/Welcome?name=Rick&numtimes=4&gender=female
-        public IActionResult Index(string name, string gender = "male")
+        public async Task<IActionResult> Index(string name, string gender = "male")
         {
+            var complimentObj = new Compliment();
+
             ViewData["Message"] = "Hello " + name;
             ViewData["Gender"] = gender.ToLower();
-            ViewData["Compliments"] = new Compliment().GetCompliment(gender.ToLower());
+            ViewData["Compliments"] = complimentObj.GetCompliment(gender.ToLower());
+            await complimentObj.GetComplimentFromAPI();
+    
+            var compliment = JsonConvert.DeserializeObject<JObject>(complimentObj.ComplimentProp);
+            Console.WriteLine($"compliment: {compliment["compliment"]}");
+            ViewData["ComplimentFromAPI"] = compliment["compliment"];
 
             return View();
         }

@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Polyglottal project";
     var compliments = ViewData["Compliments"] as List<string>;
+    var compliment = ViewData["ComplimentFromAPI"];
 }
 
 <div class="row">
@@ -33,9 +34,14 @@
                  asp-append-version="true" />
             <ul>
                 <li>@ViewData["Message"], you are: @ViewData["Gender"]</li>
-                @foreach (string element in compliments) {
-                    <li>@element</li>           
+                @foreach (string element in compliments)
+                {
+                    <li>@element</li>
                 }
+                    <li>
+                        @*@compliment.GetType().GetProperty("compliment").GetValue(compliment, null)*@
+                        @compliment
+                    </li>
             </ul>
         </div>
     </div>
