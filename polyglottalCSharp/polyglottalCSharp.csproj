@@ -10,15 +10,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\js\Vendor\" />
     <Folder Include="Controllers\api\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\images\banner1.svg" />
     <Content Remove="wwwroot\images\banner2.svg" />
     <Content Remove="wwwroot\images\banner3.svg" />
+    <Content Remove="wwwroot\images\mariam-soliman-690003-unsplash.jpg" />
+    <Content Remove="wwwroot\images\complimentMe.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="wwwroot\images\mariam-soliman-690003-unsplash.jpg" />
+    <None Include="wwwroot\images\complimentMe.png" />
   </ItemGroup>
 </Project>
