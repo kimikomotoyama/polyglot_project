@@ -36,20 +36,20 @@
             </div>
             <div class="col-md-3">
                 <div class="each-bubble row">
-                    <div class="speech-bubble kenburns-bottom">
+                    <div class="speech-bubble tracking-in-expand">
                         @ViewData["Message"], you are: @ViewData["Gender"]
                     </div>
                 </div>
                 @foreach (string element in compliments)
                 {
                     <div class="each-bubble row">
-                        <div class="speech-bubble kenburns-bottom">
+                        <div class="speech-bubble tracking-in-expand">
                             @element
                         </div>
                     </div>
                 }
                 <div class="each-bubble row">
-                    <div class="speech-bubble kenburns-bottom">
+                    <div class="speech-bubble tracking-in-expand">
                         @compliment
                     </div>
                 </div>
